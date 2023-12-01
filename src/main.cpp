@@ -1,6 +1,7 @@
 #include <iostream>
+#include "utils/fileutils.h"
 
 int main() {
-	std::cout << "Hello, world!" << std::endl;
+	std::cout << readFileToString("src/main.cpp") << std::endl;
 	return 0;
 }
